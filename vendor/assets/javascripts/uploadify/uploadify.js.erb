@@ -77,7 +77,7 @@ if(jQuery)(
 				if (settings.scriptData) {
 					var scriptDataString = '';
 					for (var name in settings.scriptData) {
-						scriptDataString += '&' + name + '=' + escape(settings.scriptData[name]);
+						scriptDataString += '&' + name + '=' + escape(encodeURIComponent(settings.scriptData[name]));
 					}
 					data.scriptData = escape(scriptDataString.substr(1));
 				}
