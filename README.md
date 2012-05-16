@@ -30,12 +30,12 @@ For the default styles, add this to `app/assets/stylesheets/application.css`:
 
 See the [Uploadify docs](http://www.uploadify.com/documentation/) for full customisation options. A simple example if as follows, where `#user_picture_upload` is a file input field:
 
-  $(function() {
-    $("#user_picture_upload").uploadify({
-      height        : 30,
-      uploader      : '/user/pictures',
-      width         : 120
+    $(function() {
+      $("#user_picture_upload").uploadify({
+        height        : 30,
+        uploader      : '/user/pictures',
+        width         : 120
+      });
     });
-  });
 
 TODO: Server side implementation docs.
